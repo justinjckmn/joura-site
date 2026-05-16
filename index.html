@@ -1,10 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Joura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joura is a voice-first journaling app that helps you build a daily habit of reflection in under five minutes.">
+  <title>Joura — Voice-first journaling</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Joura</h1>
-  <p>Welcome to our company.</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo">Joura</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#philosophy">Why Joura</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#download-stores" class="btn btn--primary js-scroll-download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">Voice-first journaling</span>
+          <h1 class="hero__title">Reflect daily, without the blank page.</h1>
+          <p class="hero__subtitle">Open Joura, respond to a gentle prompt, and speak your thoughts. A meaningful daily reflection in under five minutes.</p>
+          <div class="hero__actions">
+            <a href="#download-stores" class="btn btn--primary js-scroll-download">Download Joura</a>
+            <a href="#philosophy" class="btn btn--secondary">Learn more</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-mockup__screen">
+              <p class="phone-mockup__prompt">"What felt meaningful today?"</p>
+              <div class="phone-mockup__wave">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="phone-mockup__hint">Tap to speak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="container text-center">
+        <span class="section-label">Features</span>
+        <h2 class="section-title">Everything you need. Nothing you don't.</h2>
+        <p class="section-lead">Designed for calm, consistent reflection — not endless scrolling or performance pressure.</p>
+      </div>
+      <div class="container">
+        <div class="features__grid">
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🎙</div>
+            <h3>Voice-to-text</h3>
+            <p>Speak naturally. Joura captures your words so you can reflect without typing.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">✦</div>
+            <h3>Daily prompts</h3>
+            <p>Gentle questions guide your thinking — no pressure to fill a page.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">◯</div>
+            <h3>Distraction-free</h3>
+            <p>A minimal interface that keeps you present with your thoughts.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔔</div>
+            <h3>Daily reminders</h3>
+            <p>A soft nudge at the time you choose, so reflection becomes a habit.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">◎</div>
+            <h3>Streak tracking</h3>
+            <p>See your consistency grow — celebrate showing up, not perfection.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📅</div>
+            <h3>Journal history</h3>
+            <p>Browse past entries on a calendar view and revisit moments that mattered.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">✎</div>
+            <h3>Edit anytime</h3>
+            <p>Refine voice transcripts or add a note — your journal evolves with you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section philosophy" id="philosophy">
+      <div class="container">
+        <span class="section-label">Why Joura?</span>
+        <h2 class="section-title">Journaling should feel like a breath, not a burden.</h2>
+        <div class="philosophy__grid">
+          <blockquote class="philosophy__quote">
+            Traditional journaling asks for time, energy, and a blank page. Joura meets you where you are — with your voice, a thoughtful prompt, and five quiet minutes.
+          </blockquote>
+          <ul class="philosophy__points">
+            <li>
+              <strong>Habit over hustle</strong>
+              Small, daily reflections compound into deeper self-awareness.
+            </li>
+            <li>
+              <strong>Voice lowers the barrier</strong>
+              Speaking is faster and more natural than staring at a cursor.
+            </li>
+            <li>
+              <strong>Warmth, not noise</strong>
+              No feeds, no gamification tricks — just space to think.
+            </li>
+            <li>
+              <strong>Your story, privately yours</strong>
+              Your entries stay on your device. Reflect with confidence.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section screenshots" id="screenshots">
+      <div class="container text-center">
+        <span class="section-label">The app</span>
+        <h2 class="section-title">A calm space for daily reflection</h2>
+        <p class="section-lead">A quiet, thoughtful experience from your first prompt to your journal history.</p>
+      </div>
+      <div class="container">
+        <div class="screenshots__row" role="list" aria-label="App screenshots">
+          <figure class="screenshot-card" role="listitem">
+            <img src="assets/screenshots/dailyPrompt.png" alt="Joura home screen with today's reflection prompt" width="472" height="1024" loading="lazy">
+            <figcaption>Daily prompt</figcaption>
+          </figure>
+          <figure class="screenshot-card" role="listitem">
+            <img src="assets/screenshots/voiceRecording.png" alt="Joura voice recording screen with microphone" width="472" height="1024" loading="lazy">
+            <figcaption>Voice recording</figcaption>
+          </figure>
+          <figure class="screenshot-card" role="listitem">
+            <img src="assets/screenshots/streakView.png" alt="Joura journal history list view" width="472" height="1024" loading="lazy">
+            <figcaption>Streak view</figcaption>
+          </figure>
+          <figure class="screenshot-card" role="listitem">
+            <img src="assets/screenshots/calendarHistory.png" alt="Joura calendar history with entries marked" width="472" height="1024" loading="lazy">
+            <figcaption>Calendar history</figcaption>
+          </figure>
+          <figure class="screenshot-card" role="listitem">
+            <img src="assets/screenshots/entryDetail.png" alt="Joura entry detail showing a completed reflection" width="472" height="1024" loading="lazy">
+            <figcaption>Entry detail</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="container text-center">
+        <span class="section-label">Reflections</span>
+        <h2 class="section-title">What daily users are saying</h2>
+      </div>
+      <div class="container">
+        <div class="testimonials__grid">
+          <figure class="quote-card">
+            <blockquote>"I've tried journaling apps for years. Joura is the first one I actually use every morning — speaking feels effortless."</blockquote>
+            <cite>— Early beta user</cite>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>"Five minutes with a prompt and I'm done. No guilt about empty pages."</blockquote>
+            <cite>— Daily reflector</cite>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>"The app causes me to take time out of my day to reflect, which has helped me better focus on what's most important in my life."</blockquote>
+            <cite>— Daily reflector</cite>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="download">
+      <div class="container">
+        <h2 class="cta__title">Start your reflection habit today</h2>
+        <p class="cta__text">Download Joura and complete your first voice journal in under five minutes.</p>
+        <div class="store-badges" id="download-stores">
+          <a
+            class="store-badge store-badge--apple"
+            href="https://apps.apple.com/app/joura/id0000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-app-store
+          >
+            <img
+              src="assets/app-store-badge.png"
+              alt="Download on the App Store"
+              width="240"
+              height="83"
+            >
+          </a>
+          <div class="store-badge store-badge--google store-badge--soon" aria-label="Google Play — Coming soon">
+            <img
+              src="assets/google-play-badge.png"
+              alt=""
+              width="300"
+              height="89"
+              aria-hidden="true"
+            >
+            <span class="store-badge__soon">Coming soon</span>
+          </div>
+        </div>
+        <p class="cta__note">Available on iOS · Android coming soon</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="index.html" class="logo">Joura</a>
+        <p class="site-footer__tagline">Voice-first journaling for a calmer, more reflective life.</p>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="site-footer__copy">&copy; 2026 Joura. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
