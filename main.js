@@ -1,6 +1,6 @@
 (function () {
   // Replace with your App Store listing URL (find it in App Store Connect)
-  var APP_STORE_URL = "https://apps.apple.com/app/joura/id0000000000";
+  var APP_STORE_URL = "https://apps.apple.com/us/app/joura/id6767884175";
 
   document.querySelectorAll("[data-app-store]").forEach(function (link) {
     link.href = APP_STORE_URL;
